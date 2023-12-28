@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        initialRoute: AppRoutes.login,
+        initialRoute: "/",
         onGenerateRoute: (settings) => Routes.onGenerate(settings),
 
       ),

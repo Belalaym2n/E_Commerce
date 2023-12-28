@@ -1,11 +1,13 @@
+import 'package:e_commerce/features/home/presentation/pages/home_screen.dart';
 import 'package:e_commerce/features/login/presentation/pages/login.dart';
 import 'package:e_commerce/features/signUp/presentation/pages/signUpScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
-  static const String login = "Login";
+   static const String login = "/";
   static const String signUp = "signUp";
+  static const String home = "home";
 }
 
 class Routes {
@@ -19,6 +21,8 @@ class Routes {
         return MaterialPageRoute(
           builder: (context) => SignUpScreen(),
         );
+      case AppRoutes.home:
+        return MaterialPageRoute(builder: (context) => HomeScreen(),);
       default:
         return MaterialPageRoute(
           builder: (context) {
@@ -33,6 +37,7 @@ class Routes {
         );
     }
   }
+
   static undefinWidget(){
     Container(
       child: Center(
